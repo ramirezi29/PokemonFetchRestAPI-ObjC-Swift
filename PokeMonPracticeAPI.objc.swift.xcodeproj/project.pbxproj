@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		47AB07142151F65500A28728 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AB07132151F65500A28728 /* AppDelegate.m */; };
-		47AB07172151F65500A28728 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AB07162151F65500A28728 /* ViewController.m */; };
 		47AB071A2151F65500A28728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47AB07182151F65500A28728 /* Main.storyboard */; };
 		47AB071C2151F65700A28728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AB071B2151F65700A28728 /* Assets.xcassets */; };
 		47AB071F2151F65700A28728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47AB071D2151F65700A28728 /* LaunchScreen.storyboard */; };
 		47AB07222151F65700A28728 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AB07212151F65700A28728 /* main.m */; };
+		47AB072B2151FA2200A28728 /* IRPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AB072A2151FA2200A28728 /* IRPokemon.m */; };
+		47E0A80821528B0F00BB910F /* IRPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0A80721528B0F00BB910F /* IRPokemonController.m */; };
+		47E0A80D2152942400BB910F /* IRPokemonSearchSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0A80C2152942400BB910F /* IRPokemonSearchSwiftViewController.swift */; };
+		47E0A80F2152985900BB910F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0A80E2152985900BB910F /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47AB070F2151F65500A28728 /* PokeMonPracticeAPI.objc.swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMonPracticeAPI.objc.swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47AB07122151F65500A28728 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		47AB07132151F65500A28728 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		47AB07152151F65500A28728 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		47AB07162151F65500A28728 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		47AB07192151F65500A28728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47AB071B2151F65700A28728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47AB071E2151F65700A28728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47AB07202151F65700A28728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47AB07212151F65700A28728 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47AB07292151FA2200A28728 /* IRPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRPokemon.h; sourceTree = "<group>"; };
+		47AB072A2151FA2200A28728 /* IRPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRPokemon.m; sourceTree = "<group>"; };
+		47E0A80621528B0F00BB910F /* IRPokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRPokemonController.h; sourceTree = "<group>"; };
+		47E0A80721528B0F00BB910F /* IRPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRPokemonController.m; sourceTree = "<group>"; };
+		47E0A809215293B600BB910F /* PokeMonPracticeAPI.objc.swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeMonPracticeAPI.objc.swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		47E0A80C2152942400BB910F /* IRPokemonSearchSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRPokemonSearchSwiftViewController.swift; sourceTree = "<group>"; };
+		47E0A80E2152985900BB910F /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +66,62 @@
 		47AB07112151F65500A28728 /* PokeMonPracticeAPI.objc.swift */ = {
 			isa = PBXGroup;
 			children = (
+				47AB072F2151FA7200A28728 /* Swift */,
+				47AB072E2151FA6000A28728 /* Controller */,
+				47AB072D2151FA5500A28728 /* UI */,
+				47AB072C2151FA3D00A28728 /* Model */,
+				47AB07282151F9DB00A28728 /* Resources */,
+			);
+			path = PokeMonPracticeAPI.objc.swift;
+			sourceTree = "<group>";
+		};
+		47AB07282151F9DB00A28728 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47E0A80E2152985900BB910F /* extension.swift */,
 				47AB07122151F65500A28728 /* AppDelegate.h */,
 				47AB07132151F65500A28728 /* AppDelegate.m */,
-				47AB07152151F65500A28728 /* ViewController.h */,
-				47AB07162151F65500A28728 /* ViewController.m */,
-				47AB07182151F65500A28728 /* Main.storyboard */,
 				47AB071B2151F65700A28728 /* Assets.xcassets */,
 				47AB071D2151F65700A28728 /* LaunchScreen.storyboard */,
 				47AB07202151F65700A28728 /* Info.plist */,
 				47AB07212151F65700A28728 /* main.m */,
 			);
-			path = PokeMonPracticeAPI.objc.swift;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47AB072C2151FA3D00A28728 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47AB07292151FA2200A28728 /* IRPokemon.h */,
+				47AB072A2151FA2200A28728 /* IRPokemon.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47AB072D2151FA5500A28728 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47AB07182151F65500A28728 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47AB072E2151FA6000A28728 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47E0A80621528B0F00BB910F /* IRPokemonController.h */,
+				47E0A80721528B0F00BB910F /* IRPokemonController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47AB072F2151FA7200A28728 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				47E0A809215293B600BB910F /* PokeMonPracticeAPI.objc.swift-Bridging-Header.h */,
+				47E0A80C2152942400BB910F /* IRPokemonSearchSwiftViewController.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,11 +150,13 @@
 		47AB07072151F65500A28728 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = IR;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = ramcomw;
 				TargetAttributes = {
 					47AB070E2151F65500A28728 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -141,8 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47AB07172151F65500A28728 /* ViewController.m in Sources */,
+				47E0A80821528B0F00BB910F /* IRPokemonController.m in Sources */,
 				47AB07222151F65700A28728 /* main.m in Sources */,
+				47AB072B2151FA2200A28728 /* IRPokemon.m in Sources */,
+				47E0A80F2152985900BB910F /* extension.swift in Sources */,
+				47E0A80D2152942400BB910F /* IRPokemonSearchSwiftViewController.swift in Sources */,
 				47AB07142151F65500A28728 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,15 +343,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = PokeMonPracticeAPI.objc.swift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeMonPracticeAPI.objc.swift/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ramcomw.i2v.PokeMonPracticeAPI-objc-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeMonPracticeAPI.objc.swift/Swift/PokeMonPracticeAPI.objc.swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,15 +364,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = PokeMonPracticeAPI.objc.swift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeMonPracticeAPI.objc.swift/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ramcomw.i2v.PokeMonPracticeAPI-objc-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeMonPracticeAPI.objc.swift/Swift/PokeMonPracticeAPI.objc.swift-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

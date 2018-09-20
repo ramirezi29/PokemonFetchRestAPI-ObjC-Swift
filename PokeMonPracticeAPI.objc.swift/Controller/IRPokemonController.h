@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IRPokemon.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IRPokemonController : NSObject
+
++(void) fetchPokemonForSearchTerm:(NSString *)searchTerm completion:(void (^ _Nullable) (IRPokemon *_Nullable))completion;
 
 @end
 

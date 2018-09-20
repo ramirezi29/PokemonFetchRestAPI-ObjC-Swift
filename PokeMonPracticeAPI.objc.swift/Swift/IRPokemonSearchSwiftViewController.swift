@@ -10,21 +10,46 @@ import UIKit
 
 class IRPokemonSearchSwiftViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var abilitiesLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var pokemon: IRPokemon?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        searchBar.delegate = self
+        view.addVerticalGradientLayer(topColor: .black, bottomColor: .clear)
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        guard let pokemon = self.pokemon else {return}
+        nameLabel.text = pokemon.name
+        abilitiesLabel.text = "Abilities: \(pokemon.abilities.joined(separator: ", "))"
+        idLabel.text = "\(pokemon.name)'s ID: \(pokemon.identifer)"
+        weightLabel.text = "\(pokemon.name)'s Weight: \(pokemon.weight) Lbs"
     }
-    */
 
+
+}
+
+
+extension IRPokemonSearchSwiftViewController: UISearchBarDelegate
+{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchText = searchBar.text, !searchText.isEmpty else {return}
+        IRPokemonController.fetchPokemon(forSearchTerm: searchText) { (pocketMonster) in
+            
+        self.pokemon = pocketMonster
+        DispatchQueue.main.async {
+            searchBar.resignFirstResponder()
+            self.updateViews()
+        }
+    }
+}
 }
