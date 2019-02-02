@@ -15,7 +15,7 @@
 		47AB072B2151FA2200A28728 /* IRPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AB072A2151FA2200A28728 /* IRPokemon.m */; };
 		47E0A80821528B0F00BB910F /* IRPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E0A80721528B0F00BB910F /* IRPokemonController.m */; };
 		47E0A80D2152942400BB910F /* IRPokemonSearchSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0A80C2152942400BB910F /* IRPokemonSearchSwiftViewController.swift */; };
-		47E0A80F2152985900BB910F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0A80E2152985900BB910F /* extension.swift */; };
+		47E0A80F2152985900BB910F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0A80E2152985900BB910F /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		47E0A80721528B0F00BB910F /* IRPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRPokemonController.m; sourceTree = "<group>"; };
 		47E0A809215293B600BB910F /* PokeMonPracticeAPI.objc.swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeMonPracticeAPI.objc.swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		47E0A80C2152942400BB910F /* IRPokemonSearchSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRPokemonSearchSwiftViewController.swift; sourceTree = "<group>"; };
-		47E0A80E2152985900BB910F /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		47E0A80E2152985900BB910F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 		47AB07282151F9DB00A28728 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				47E0A80E2152985900BB910F /* extension.swift */,
+				47E0A80E2152985900BB910F /* UIViewExtension.swift */,
 				47AB07122151F65500A28728 /* AppDelegate.h */,
 				47AB07132151F65500A28728 /* AppDelegate.m */,
 				47AB071B2151F65700A28728 /* Assets.xcassets */,
@@ -199,7 +199,7 @@
 				47E0A80821528B0F00BB910F /* IRPokemonController.m in Sources */,
 				47AB07222151F65700A28728 /* main.m in Sources */,
 				47AB072B2151FA2200A28728 /* IRPokemon.m in Sources */,
-				47E0A80F2152985900BB910F /* extension.swift in Sources */,
+				47E0A80F2152985900BB910F /* UIViewExtension.swift in Sources */,
 				47E0A80D2152942400BB910F /* IRPokemonSearchSwiftViewController.swift in Sources */,
 				47AB07142151F65500A28728 /* AppDelegate.m in Sources */,
 			);
